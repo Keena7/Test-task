@@ -1,0 +1,44 @@
+.imageGalleryContainer {
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.imageGalleryContainer .imageGalleryRow .imageGalleryList {
+  flex: 1 1 23%;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.drag-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25);
+  outline: 1px solid #fff;
+  outline-offset: -10px;
+  transition: all .5s ease;
+  opacity: 0;
+}
+
+.imageGalleryContainer .imageGalleryRow .imageGalleryList:hover .drag-text {
+  opacity: 1;
+}
+
+.imageGalleryContainer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.btn-primary {
+  background-color: #00a399;
+  border-color: #00a399;
+}
+.btn-primary:hover {
+  background-color: #007f75;
+  border-color: #007f75;
+}
